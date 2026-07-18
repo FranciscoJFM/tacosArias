@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tacos Arias | Luchando contra el antojo</title>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700;900&family=Oswald:wght@500;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- particles.js container -->
+    <div id="particles-js"></div>
+
+    <nav class="navbar" id="navbar">
+        <div class="nav-content">
+            <div class="nav-logo">
+                <i class="fas fa-star" style="font-size: 0.8rem; margin-right: 5px;"></i>
+                TACOS ARIAS
+            </div>
+
+        </div>
+    </nav>
+
+    <header class="hero" id="home">
+        <div class="hero-content">
+            <div class="logo-wrapper" data-tilt data-tilt-max="15" data-tilt-speed="400" data-tilt-glare="true" data-tilt-max-glare="0.2">
+                <!-- If the user has 'logo.jpeg', it will show. Otherwise fallback fires -->
+                <img src="logo.jpeg" alt="Tacos Arias Logo" class="main-logo" id="main-logo" onerror="this.style.display='none'; document.getElementById('fallback-logo').style.display='flex';">
+                
+                <div id="fallback-logo" class="fallback-logo" style="display: none;">
+                    <div class="fallback-border">
+                        <svg viewBox="0 0 200 200" class="svg-text">
+                            <path id="curve-top" d="M 30,100 A 70,70 0 0,1 170,100" fill="transparent" />
+                            <text width="200" class="svg-title">
+                                <textPath href="#curve-top" startOffset="50%" text-anchor="middle">TACOS ARIAS</textPath>
+                            </text>
+                            
+                            <path id="curve-bottom" d="M 160,120 A 60,60 0 0,1 40,120" fill="transparent" />
+                            <text width="200" class="svg-subtitle">
+                                <textPath href="#curve-bottom" startOffset="50%" text-anchor="middle">LUCHANDO CONTRA EL ANTOJO</textPath>
+                            </text>
+                        </svg>
+                        <div class="fallback-center">
+                            <div class="fallback-stars">★ ★ ★</div>
+                            <div class="fallback-icons">
+                                <i class="fas fa-hamburger taco-icon"></i>
+                                <i class="fas fa-mask mask-icon"></i>
+                                <i class="fas fa-hamburger taco-icon"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <h1 class="glitch" data-text="TACOS ARIAS">TACOS ARIAS</h1>
+            <p class="subtitle">LUCHANDO CONTRA EL ANTOJO</p>
+            
+            <div class="info-badges">
+                <span class="badge"><i class="fas fa-map-marker-alt"></i> Av. San Jerónimo #70 col. El Ocotal</span>
+                <span class="badge"><i class="fas fa-phone"></i> 562 809 2612</span>
+                <span class="badge"><i class="fas fa-clock"></i> 10:00 AM - 10:00 PM</span>
+            </div>
+        </div>
+        
+        <div class="scroll-indicator" onclick="document.getElementById('menu').scrollIntoView({behavior: 'smooth'})">
+            <span>Ver Menú</span>
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container" id="menu">
+        <h2 class="section-heading">NUESTRO <span>MENÚ</span></h2>
+        
+        <div class="menu-grid">
+            <!-- Tacos -->
+            <div class="menu-card glass-panel" data-tilt data-tilt-max="5" data-tilt-speed="400">
+                <div class="card-header">
+                    <i class="fas fa-fire fa-2x neon-icon"></i>
+                    <h3>TACOS</h3>
+                </div>
+                <ul class="menu-items">
+                    <li><span class="item-name">Cecina Natural</span> <span class="price">$28</span></li>
+                    <li><span class="item-name">Cecina Enchilada</span> <span class="price">$28</span></li>
+                    <li><span class="item-name">Bisteck</span> <span class="price">$28</span></li>
+                    <li><span class="item-name">Longaniza</span> <span class="price">$28</span></li>
+                    <li><span class="item-name">Campechano</span> <span class="price">$28</span></li>
+                    <li><span class="item-name">Pechuga de Pollo</span> <span class="price">$28</span></li>
+                    <li><span class="item-name">Chuleta</span> <span class="price">$28</span></li>
+                </ul>
+                <div class="card-footer">
+                    <span class="extra"><i class="fas fa-plus"></i> Con Queso $5 Extra</span>
+                </div>
+            </div>
+
+            <!-- Especialidades -->
+            <div class="menu-card glass-panel" data-tilt data-tilt-max="5" data-tilt-speed="400">
+                <div class="card-header">
+                    <i class="fas fa-crown fa-2x neon-icon"></i>
+                    <h3>ESPECIALIDADES</h3>
+                </div>
+                <ul class="menu-items">
+                    <li><span class="item-name">Alambre</span> <span class="price">$33</span></li>
+                    <li><span class="item-name">Arrachera</span> <span class="price">$33</span></li>
+                    <li>
+                        <span class="item-name">Quesabirria <span class="tag pulse">Fin de Semana</span></span> 
+                        <span class="price">$33</span>
+                    </li>
+                    <li>
+                        <span class="item-name">Birriamen <span class="tag pulse">Fin de Semana</span></span> 
+                        <span class="price">$50</span>
+                    </li>
+                    <li>
+                        <span class="item-name">Plato de Birria <span class="tag pulse">Fin de Semana</span></span> 
+                        <span class="price">$85</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Bebidas -->
+            <div class="menu-card glass-panel" data-tilt data-tilt-max="5" data-tilt-speed="400">
+                <div class="card-header">
+                    <i class="fas fa-glass-cheers fa-2x neon-icon"></i>
+                    <h3>BEBIDAS</h3>
+                </div>
+                <ul class="menu-items">
+                    <li><span class="item-name">Café</span> <span class="price">$15</span></li>
+                    <li><span class="item-name">Té</span> <span class="price">$15</span></li>
+                    <li><span class="item-name">Refresco</span> <span class="price">$28</span></li>
+                    <li><span class="item-name">Agua ½ Litro</span> <span class="price">$20</span></li>
+                    <li><span class="item-name">Agua 1 Litro</span> <span class="price">$35</span></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="qr-section">
+            <h2 class="section-heading">ESCANEA NUESTRO <span>MENÚ</span></h2>
+            <div class="qr-cards">
+                <div class="qr-glass">
+                    <!-- The URL here can be changed once deployed. -->
+                    <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&color=FFD700&bgcolor=111111&data=https://tacos-arias.com" alt="QR Menú">
+                    <p>Menú Digital</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 TACOS ARIAS. Luchando contra el antojo.</p>
+            <p class="footer-subtitle">Próximamente: Servicio a domicilio y pedidos por WhatsApp <i class="fas fa-motorcycle"></i> <i class="fab fa-whatsapp"></i></p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
